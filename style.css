@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+.ancho {
+    max-width: 1200px;
+    margin: auto;
+}
+header {
+    background-color: #FFF9F1;
+    border-top: 10px #F2308B solid;
+    padding: 10px;
+}
+.logo {
+border: 1px;
+width: 200px;
+}
+.logo img {
+    width: 100%;
+}
+.contenedor_redes {
+    border: 1px;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+.iconos_redes {
+    font-size: 35px;
+    color: #333;
+    transition: all 0.5s;
+}
+.iconos_redes:hover {
+    color: #F2308B;
+}
+.contenedor_cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    border: 3px #333 solid;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a {
+    padding: 10px 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    color: #333;
+}
+.contenedor_promociones {
+    background-image: url(imagenes/fondopiedras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+.infopromo {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+.infopromo h1 {
+    font-size: 30px;
+    color: white;
+}
+.infopromo p {
+    font-size: 20px;
+    color: white;
+}
+.btn_rosado {
+    border: 20px #F2308B solid;
+      background-color: #F2308B;
+      text-decoration: none;
+      color: white;
+}
+.btn_borderosado {
+    border: 1px #F2308B solid;
+    padding: 18px;
+    text-decoration: none;
+    color: white;
+}
+.contenedor_info_productos {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+.contenedor_info_productos article {
+    max-width: 500px;
+}
+.contenedor_info_productos h3 { 
+    font-size: 22px;
+    padding: 20px 0px;
+}
+.contenedor_info_productos p {
+    padding-top: 10px;
+    line-height: 38px;
+}
+.contenedor_info_productos figure {
+    max-width: 500px;
+}
+.contenedor_talento {
+    background-color: #FFF9F1;
+    padding: 20px;
+}
+.contenedor_talento h2 {
+    text-align: center;
+    padding: 10px;
+}
+.contenedor_puestos {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.contenedor_puestos figure {
+    width: 48%;
+    padding: 0;
+}
+.contenedor_puestos img {
+    width: 100%;
+    border-radius: 20px;
+}
+.infopuestos {
+    width: 48%;
+}
+.contenedor_servicios {
+    background-color: #FFF9F1;
+    padding: 20px;
+}
+.info_servicios  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 26px;
+}
+.info_servicios article {
+    background-color: #FFE8A4;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+}
+.info_servicios p {
+    text-align: justify;
+}
+.info_servicios figure {
+    max-width: 150px;
+    margin: auto;
+}
+.info_servicios figure img {
+     width: 100px;
+    height: 100px;
+    object-fit: cover;
+     border-radius: 50%;
+     border: 10px white;
+}
+footer {
+    border-bottom: 10px #F2308B solid;
+    padding: 20px 15px;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: #F2308B;
+    padding: 10px;
+}
+
+
+@media screen and (max-width:768px) {
+.contenedor_info_productos {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;}
+
+.contenedor_info_productos article {
+    width: 95%;
+}
+.contenedor_info_productos figure {
+    width: 70%;
+}
+.contenedor_info_productos img {
+    width: 100%;
+}
+.contenedor_puestos {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.infopuestos {
+ width: 100%;
+
+}
+.contenedor_puestos figure {
+    width: 70%;
+}
+.info_servicios{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info_servicios article {
+    max-width: 100%;
+}
+}
+
+@media screen and (max-width: 630px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    nav a {
+        display: block;
+        width: 100%;
+        border-bottom:1px #333 dotted;
+    }
+}
+@media screen and (max-width: 480px) {
+    .contenedor_cabecera {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor_redes {
+        margin-bottom: 20px;
+    }
+   .infopromo h1 {
+        text-align: left;
+        padding-left: 15px;
+   }
+   .infopromo p {
+    font-size: 16px;
+    padding: 20px;
+   }
+   .contenedor_info_productos figure {
+    width: 95%;
+   }
+   .contenedor_info_productos h3 {
+    font-size: 18px;
+    text-align: center;
+   }
+   .contenedor_puestos figure {
+    width: 100%;
+}
+.contenedor_talento h2 {
+    font-size: 18px;
+}
+}
+@media screen and (max-width: 355px) {
+    .btn_rosado {
+        margin-bottom: 15px;
+    }
+}
