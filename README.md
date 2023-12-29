@@ -5,17 +5,30 @@ El propósito de este modelo es mostrar los servicios del spa, las redes sociale
 
 ### CAPTURAS DE PANTALLA:
 
+Inicio y promociones:
 
+![Inicio y promociones](imagenes/readme/promociones-spa.png)
 
+Productos:
 
+![Productos](imagenes/readme/productos-spa.png)
 
+Servicios:
 
+![Servicios](imagenes/readme/servicios-spa.png)
 
+## Tecnologías
 
+Esta página web fue creada con:
 
+* HTML
+* CSS
 
+Además, se incluyeron **Google Fonts** para personalizar la fuente y **FontAweosome** para incorporar íconos como flechas y logos de redes sociales populares. 
 
+## Español
 
+El texto de la página web está escrito en español, al igual que las clases y atributos personalizados.
 
 
 Link a la página: https://vanesolis.github.io/Spa/
